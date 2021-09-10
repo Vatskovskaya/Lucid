@@ -1,0 +1,140 @@
+body{
+	position: relative;
+	font-family: 'Source Sans Pro', sans-serif;
+	margin: 0;
+}
+		
+h1,h2,h3,h4,h5,h6,p,li,ul,ol,img,a,input{
+	margin: 0;
+	padding: 0;
+}
+
+a{
+	text-decoration: none;
+}
+
+.container{
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+.button{
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+
+	color: #fff;
+	background-color: #008ed6;
+	border-radius: 4px;
+	padding: 20px 25px;
+    max-width: 160px;
+    width: 100%;
+    text-align: center;	
+    border: 1px solid transparent;
+    transition: 0.2s;
+}
+.button:hover{
+	background-color: transparent;
+	border: 1px solid #454449;
+}
+.blue__title{
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #008ed6;
+
+	margin-bottom: 15px;
+}
+
+.underline{
+	position: relative;
+}
+.underline::after{
+	display: block;
+	position: absolute;
+	bottom: -10px;
+	left: 50%;
+	transform: translateX(-50%);
+	content: "";
+	background-image: url(../img/icon/underline.png);
+	width: 42px;
+	height: 10px;
+}
+
+/*Header Section*/
+.page-header{
+	padding-top: 30px;
+	padding-bottom: 40px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	width: 100%;
+}
+.header__navigation{
+	display: flex;
+	justify-content: space-between;
+	
+}
+.header__navigation-list{
+	font-weight: 600;
+	font-size: 16px;
+
+	display: flex;
+	justify-content: space-between;
+	list-style-type: none;
+
+	column-gap: 25px;
+}
+.header__navigation-list a{
+	color: #fff;
+}
+/*Main-Section*/
+.main-section{
+	background-color: #222128;
+	background-image: url(../img/photo.jpg);
+	background-size: cover;
+
+	color: #fff;
+
+	padding-top: 160px;
+	padding-bottom: 150px;
+	position: relative;
+	overflow: hidden;
+}
+
+.main-section__text-info{
+	max-width: 490px;
+}
+.main-section__text-info .blue__title{
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #008ed6;
+
+	margin-bottom: 20px;
+}
+.main-section__text-info h1{
+	font-size: 48px;
+	line-height: 48px;
+	font-weight: 500;
+
+	margin-bottom: 23px;
+}
+.main-section__text-info p{
+	font-size: 18px;
+	color: #999999;
+
+	margin-bottom: 60px;
+}
+.download__button{
+	margin-right: 20px;
+}
+.main-section__img{
+	position: absolute;
+	right: 0;
+	bottom: -95px;
+}
+
+/*Features Section*/
+
