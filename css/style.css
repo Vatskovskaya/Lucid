@@ -26,7 +26,7 @@ a{
 	color: #fff;
 	background-color: #008ed6;
 	border-radius: 4px;
-	padding: 20px 25px;
+	padding: 15px 25px;
     max-width: 160px;
     width: 100%;
     text-align: center;	
@@ -45,23 +45,56 @@ a{
 
 	margin-bottom: 15px;
 }
+.subtitle__grey{
+	font-size: 18px;
+	line-height: 26px;
+	color: #999999;
+}
+.title{
+	font-size: 36px;
+	line-height: 48px;
+	font-weight: 600;
+}
 
+.title_underline{
+	position: relative;
+	margin-bottom: 60px;
+}
+.title_underline:after{
+	content: "";
+	display: block;
+	background-image: url(../img/icon/underline.png);
+	position: absolute;
+	bottom: -20px;
+	left: 0;
+	width: 42px;
+	height: 2px;
+}
 .underline{
 	position: relative;
 }
 .underline::after{
+	content: "";
 	display: block;
 	position: absolute;
-	bottom: -10px;
-	left: 50%;
-	transform: translateX(-50%);
+	bottom: -12px;
+	right: 52%;
+/*	transform: translateX(-52%);*/
+	width: 48%; 
+	border-bottom: 2px solid #008ed6;
+}
+.underline::before{
 	content: "";
-	background-image: url(../img/icon/underline.png);
-	width: 42px;
-	height: 10px;
+	display: block;
+	position: absolute;
+	bottom: -12px;
+	left: 52%;
+/*	transform: translateX(-52%);*/
+	width: 48%;
+	border-bottom: 2px solid #008ed6;
 }
 
-/*Header Section*/
+/*-----------------------------Header Section--------------------*/
 .page-header{
 	padding-top: 30px;
 	padding-bottom: 40px;
@@ -107,11 +140,6 @@ a{
 	max-width: 490px;
 }
 .main-section__text-info .blue__title{
-	font-size: 14px;
-	font-weight: bold;
-	text-transform: uppercase;
-	color: #008ed6;
-
 	margin-bottom: 20px;
 }
 .main-section__text-info h1{
@@ -136,5 +164,291 @@ a{
 	bottom: -95px;
 }
 
-/*Features Section*/
+/*-----------------Features Section------------------*/
+.features{
+	padding-top: 30px;
+	padding-bottom: 60px;
+	text-align: center;
+	border-bottom: 1px solid #ededed;
+}
+.features__list{
+	display: flex;
+	justify-content: space-between;
+}
+
+.features .title_underline:after{
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: -30px;
+}
+
+.features__list__item{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-basis: 20%;
+}
+.features__list__item h3{
+	font-size: 23px;
+	line-height: 20px;
+	font-weight: 400;
+
+	margin-bottom: 15px;
+}
+.features__list__item img{
+	margin-bottom: 30px;
+}
+
+/*------------------------------Details Section-------------------------*/
+.details{
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
+
+.details__box{
+	display: flex;
+	justify-content: space-around;
+}
+.details-info{
+	flex-basis: 475px;
+	padding-top: 47px;
+}
+.details-info .title_underline{
+	margin-bottom: 60px;
+}
+.details-info .subtitle__grey{
+	margin-bottom: 30px;
+}
+
+.details__list{
+	list-style-type: none;
+}
+.details__list__item{
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 600;
+	padding-left: 25px;
+	position: relative;
+}
+
+.details__list__item:before{
+	content: "";
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 18px;
+	height: 18px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0;
+}
+
+.item-1:before{
+	background-image: url(../img/icon/cup.png);
+}
+.item-2:before{
+	background-image: url(../img/icon/Mouse.png);
+}
+.item-3:before{
+	background-image: url(../img/icon/Energy.png);
+}
+.item-4:before{
+	background-image: url(../img/icon/speedometer.png);
+}
+
+/*--------------------------------Costomize Section--------------------*/
+.customize{
+	background-color: #f2f2f2;
+
+	padding-top: 55px;
+	padding-bottom: 60px;
+}
+.customize__box{
+	display: flex;
+}
+.customize-info{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+/*-------------------------Pricings Section---------------------------*/
+.pricings{
+	background-color: #322e2f;
+	background-image: url(../img/bgi-slider-section.jpg);
+	background-size: cover;
+	color: #fff;
+	padding-top: 60px;
+	padding-bottom: 140px;
+}
+.pricings h4,
+.pricings h2{
+	text-align: center;
+}
+
+.pricings .title_underline:after{
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: -25px;
+}
+
+.pricings__slider__blockquote > p{
+	font-style: italic;
+	font-size: 20px;
+	line-height: 32px;
+	margin-bottom: 20px;
+}
+
+.pricings__blockquote-info{
+	display: flex;
+	align-items: center;
+	column-gap: 20px;
+}
+.pricings__blockquote-person{
+	display: flex;
+	flex-direction: column;
+}
+
+.pricings__blockquote-person cite{
+	font-size: 16px;
+	font-style: normal;
+	margin-bottom: 8px;
+}
+.pricings__blockquote-person p{
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+.slick-dots{
+	bottom: -100px;
+}
+.slick-dots li button:before{
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    padding: 0px;
+    cursor: pointer;
+    color: transparent;
+    border: 1px solid #a9afb3;
+    outline: none;
+    background: transparent;
+}
+
+.slick-dots li.slick-active button:before{
+	content: "";
+	width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border: 1px solid #fff;
+}
+
+/*----------------------download Section-------------------*/
+.download{
+	background-color: #15141a;
+	color: #fff;
+
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.download h2{
+	font-weight: 600;
+}
+.download span{
+	font-weight: 100;
+}
+.download__flex{
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+}
+.butn-container .download__button{
+	margin-left: 20px;
+}
+
+/*--------------------Plans Section-------------------*/
+.plans{
+	padding-top: 50px;
+	padding-bottom: 60px;
+}
+
+.plans .blue__title,
+.plans .title{
+	text-align: center;
+}
+.plans .title_underline:after{
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: -25px;
+}
+
+.plans__pricings{
+	display: flex;
+	justify-content: space-between;
+}
+.plans__pricings__item{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 1px solid #e0e0e0;
+	flex-basis: 272px;
+}
+
+.plans__pricings__item h3{
+	font-size: 24px;
+	line-height: 20px;
+	text-transform: uppercase;
+
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.pricelist{
+	width: 100%;
+    text-align: center;
+	padding-top: 35px;
+	padding-bottom: 35px;
+	border-top: 1px solid #e0e0e0;
+	border-bottom: 1px solid #e0e0e0;
+}
+.plans__pricings__item .price{
+	font-size: 60px;
+	font-weight: 600;
+}
+.plans__pricings__item  sup{
+	font-size: 28px;
+    font-weight: 600;
+    vertical-align: middle;
+}
+
+.plans__pricings__item .subtitle__grey{
+	padding-right: 30px;
+	padding-left: 40px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	text-align: center;
+}
+.plans__pricings__item .subtitle__grey span{
+	color: #008ed6;
+}
+.plans__button{
+	color: #008ed6;
+	background-color: transparent;
+	border: 1px solid #e0e0e0;
+	padding: 15px 0px;
+
+	margin-bottom: 25px;
+}
+
+.plans__pricings__item:hover h3{
+	color: #008ed6;
+}
+.plans__pricings__item:hover .pricelist{
+	color: #fff;
+	background-color: #008ed6;
+}
+.plans__button:hover{
+	color: #fff;
+	background-color: #008ed6;
+	border: 1px solid transparent;
+}
 
