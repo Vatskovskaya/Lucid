@@ -564,6 +564,19 @@ a{
 	color: #9999;
 	font-size: 20px;
 }
-.footer__social a:hover{
+
+.footer__social .behance:hover{
+	color: #0057FF;
+}
+.footer__social .dribble:hover{
+	color: #E84C88;
+}
+.footer__social .twitter:hover{
 	color: #008ed6;
+}
+.footer__social .facebook:hover{
+	color: #1877F2;
+}
+.footer__social .linkedin:hover{
+	color: #0A63BC;
 }
