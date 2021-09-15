@@ -79,9 +79,12 @@ a{
 	position: absolute;
 	bottom: -12px;
 	right: 52%;
-/*	transform: translateX(-52%);*/
-	width: 48%; 
+	width: 0%; 
 	border-bottom: 2px solid #008ed6;
+	transition: 0.1s;
+}
+.underline:hover::after{
+	width: 48%;
 }
 .underline::before{
 	content: "";
@@ -89,9 +92,17 @@ a{
 	position: absolute;
 	bottom: -12px;
 	left: 52%;
-/*	transform: translateX(-52%);*/
-	width: 48%;
+	width: 0%;
 	border-bottom: 2px solid #008ed6;
+	transition: 0.1s;
+}
+
+.underline:hover::before{
+	width: 48%;
+}
+
+.hamburger{
+	display: none;
 }
 
 /*-----------------------------Header Section--------------------*/
