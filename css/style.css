@@ -26,9 +26,8 @@ a{
 	color: #fff;
 	background-color: #008ed6;
 	border-radius: 4px;
-	padding: 15px 25px;
+	padding: 15px 20px;
     max-width: 160px;
-    width: 100%;
     text-align: center;	
     border: 1px solid transparent;
     transition: 0.2s;
@@ -166,7 +165,7 @@ a{
 
 	margin-bottom: 60px;
 }
-.download__button{
+.main-section .download__button{
 	margin-right: 20px;
 }
 .main-section__img{
@@ -276,11 +275,20 @@ a{
 }
 .customize__box{
 	display: flex;
+	align-items: center;
 }
 .customize-info{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	flex-grow: 1;
+	flex-shrink: 0;
+	flex-basis: 40%;
+}
+.customize__img img{
+	display: block;
+	max-width: 100%;
+	height: auto;
 }
 /*-------------------------Pricings Section---------------------------*/
 .pricings{
@@ -363,7 +371,7 @@ a{
 }
 
 .download h2{
-	font-weight: 600;
+	font-weight: 500;
 }
 .download span{
 	font-weight: 100;
@@ -373,8 +381,11 @@ a{
 	justify-content: space-between;
     align-items: center;
 }
-.butn-container .download__button{
-	margin-left: 20px;
+.butn-container{
+	display: flex;
+	justify-content: flex-end;
+	flex-basis: 40%;
+	column-gap: 20px;
 }
 
 /*--------------------Plans Section-------------------*/
@@ -402,7 +413,8 @@ a{
 	flex-direction: column;
 	align-items: center;
 	border: 1px solid #e0e0e0;
-	flex-basis: 272px;
+	flex-basis: 23.33%;
+	column-gap: 28px;
 }
 
 .plans__pricings__item h3{
@@ -446,6 +458,7 @@ a{
 	background-color: transparent;
 	border: 1px solid #e0e0e0;
 	padding: 15px 0px;
+	width: 100%;
 
 	margin-bottom: 25px;
 }
@@ -486,15 +499,18 @@ a{
 	margin-bottom: 360px;
 }
 .contact__info__item{
-	
 	display: flex;
 	flex-direction: column;
-	flex-basis: 16.666%;
+	flex-basis: 20%;
 	align-items: center;
 }
-.contact__info__item img{
-	margin-bottom: 25px;
+.contact__info__img{
+	flex-basis: 40px;
+	display: flex;
+    align-items: center;
+    margin-bottom: 20px;
 }
+
 .contact__info__item a{
 	font-size: 18px;
 	line-height: 28px;
@@ -518,6 +534,9 @@ a{
 	
 	padding-top: 40px;
 	padding-bottom: 65px;
+
+	max-width: 768px;
+	width: 100%;
 }
 .contact__form__box{
 	flex-basis: 40%;
@@ -539,7 +558,7 @@ a{
 	background-color: #15141a;
 	border-radius: 4px;
 
-	width: 290px;
+	width: calc(100% - 20px);
 	padding-left: 20px;
 	padding-top: 16px;
 	padding-bottom: 16px;

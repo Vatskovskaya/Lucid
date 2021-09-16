@@ -3,6 +3,16 @@
 	.container{
 		max-width: 1000px;
 	}
+	.customize__img{
+		max-width: 100%;
+	}
+	.download__flex h2{
+		font-size: 32px
+	}
+	.plans__pricings__item .subtitle__grey {
+	    padding-left: 20px;
+	    padding-top: 20px;
+	}
 }
 @media (max-width: 1024px){
 	.container{
@@ -20,13 +30,24 @@
 		font-size: 32px;
 		line-height: 40px;
 	}
+	.pricelist{
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	.plans__pricings__item .price{
+		font-size: 50px;
+	}
+	.contact__info__item{
+		flex-basis: 25%;
+		align-items: center;
+	}
 }
 @media (max-width: 940px) {
 	.container{
 		padding: 0 5%;
 	}
 	.title{
-		font-size: 28px;
+		font-size: 26px;
 	}
 	.header__navigation-list{
 		display: none;
@@ -66,9 +87,64 @@
 		width: 50%;
 		height: 50%;
 	}
-}
+	.customize-info{
+		flex-basis: 60%;
+	}
+	.pricings{
+		padding-top: 50px;
+		padding-bottom: 80px;
+	}
+	.slick-dots{
+		bottom: -60px;
+	}
+	.pricings__slider__blockquote > p{
+		font-size: 18px;
+		line-height: 30px;
+		margin-bottom: 25px;
+	}
+	.download{
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	.download__flex{
+		display: flex;
+		flex-direction: column;
+		row-gap: 20px;
+	}
+	.plans__pricings {
+	    display: flex;
+	    flex-wrap: wrap;
+	    justify-content: space-evenly;
+	    row-gap: 20px;
+	}
+	.plans__pricings__item {
+	    flex-basis: 33.33%;
+	}
+	.pricelist{
+		padding-top: 20px;
+		padding-bottom: 30px;
+	}
+	.plans__pricings__item .subtitle__grey {
+		padding-right: 25px;
+	    padding-left: 25px;
+	    padding-top: 20px;
+	    padding-bottom: 25px;
+	}
+	.contact__form{
+		padding-top: 40px;
+		padding-bottom: 55px;
 
+		max-width: none;
+		width: 80%;
+	}
+}
 @media (max-width: 768px){
+	.title_underline {
+	    margin-bottom: 42px;
+	}
+	.title {
+    	font-size: 23px;
+	}
 	.container{
 		padding: 0 5%;
 	}
@@ -78,15 +154,12 @@
 	.main-section__text-info{
 		margin: 0 auto;
 	}
-	.download__button{
-		margin-right: 80px;
-	}
 	.features__list__item{
 		flex-basis: 40%;
 		flex-shrink: 1;
 	}
 	.features__list__item h3{
-		font-size: 22px;
+		font-size: 20px;
 
 		margin-bottom: 12px;
 	}
@@ -119,7 +192,6 @@
 
 		display: flex;
 		justify-content: space-between;
-		/*column-gap: 8%;*/
 		max-width: 480px;
 		height: 50%
 	}
@@ -146,6 +218,74 @@
 		padding-left: 25px;
 		margin-bottom: 20px;
 	}
+	.download h2{
+		font-size: 28px;
+	}
+	.butn-container{
+		display: flex;
+		justify-content: center;
+		flex-basis: 100%;
+		column-gap: 20px;
+		margin: 0;
+	}
+	.plans{
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	.plans .blue__title{
+		margin-bottom: 5px;
+	}
+	.plans .title_underline:after{
+		bottom: -15px;
+	}
+	.plans__pricings__item h3{
+		font-size: 21px;
+
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	.pricelist{
+		padding-top: 15px;
+		padding-bottom: 25px;
+	}
+	.plans__pricings__item {
+	    flex-basis:	40%;
+	}
+	.contact__info__item{
+		flex-basis: 50%;
+	}
+	.contact .blue__title{
+		margin-bottom: 5px;
+	}
+	.contact .title_underline:after{
+	    bottom: -15px;
+	}
+	.contact__info__item{
+		flex-basis: 31%;
+	}
+	.contact__info__img{
+		flex-basis: 40px;
+		display: flex;
+	    align-items: center;
+	    margin-bottom: 10px;
+	}
+	.contact__info{
+		justify-content: space-between;
+	}
+	.contact__form{
+		flex-direction: column;
+		top: 70%;
+		left: 50%;
+		transform: translate(-50%,-70%);
+
+		width: 85%;
+	}
+	.box2{
+		align-items: center;
+	}
+	.contact__form__box .form-item{
+		width: 80%;
+	}
 }
 @media (max-width: 715px){
 	.details-info{
@@ -171,6 +311,10 @@
 		font-size: 25px;
 		line-height: 30px;
 	}
+	.contact__form{
+		padding-top: 35px;
+		padding-bottom: 35px;
+	}
 }
 @media (max-width: 632px){
 	.details-info{
@@ -189,28 +333,91 @@
 		font-size: 25px;
 		line-height: 30px;
 	}
+	.contact__info__item{
+		display: flex;
+		flex-direction: column;
+		flex-basis: 33%;
+		align-items: center;
+	}
+	.contact__info__item a{
+		font-size: 16px;
+		line-height: 22px;
+	}
 }
 @media (max-width: 576px){
+	.details{
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
 	.subtitle__grey{
 		font-size: 16px;
 	}
+	.details__img{
+		display: none;
+	}
+	
 	.details-info{
-		/*column-gap: 11%;*/
-		max-width: 350px;
+		position: relative;
+		z-index: 1;
+		top: 0%;
+		left: 0%;
+	
+		max-width: 100%;
 		height: auto;
 	}
 	.details-info-text{
-		flex-basis: 60%;
 		padding: 0;
-	/*	padding-left: 6%;*/
-	}
-	.details__list{
-		flex-basis: 35%;
-		padding-right: 10%;
+		order: 1;
+		flex-basis: 50%;
+		flex-shrink: 1;
 	}
 	.details-info .title{
-		font-size: 24px;
-		line-height: 30px;
+		color: #000;
+	}
+	.details__list{
+		align-self: center;
+		order: 2;
+		flex-basis: 40%;
+
+		color: #000;
+	}
+	.customize__img{
+		display: none
+	}
+	.download h2{
+		font-size: 22px;
+		line-height: 24px;
+	}
+	.butn-container{
+		display: flex;
+		flex-direction: column;
+		row-gap: 20px;
+	}
+	.butn-container a{
+		width: 100%;
+	}
+	.plans__pricings__item {
+	    flex-basis:	65%;
+	}
+	.contact__info{
+		display: flex;
+		flex-direction: column;
+		row-gap: 10px;
+	}
+	.contact__info__item{
+		display: flex;
+		flex-direction: row;
+	}
+	.contact__info__img {
+    	flex-basis: 50px;
+	}
+	.phone-info{
+		display: flex;
+		flex-direction: column;
+		row-gap: 5px;
+	}
+	br{
+		display: none;
 	}
 }
 @media (max-width: 480px) {
@@ -257,9 +464,54 @@
 		flex-basis: 100%;
 		flex-shrink: 1;
 	}
+	.details-info{
+		flex-direction: column;
+	}
+	.details-info .title_underline {
+    	margin-bottom: 45px;
+    }
+    .details-info-text{
+    	margin-bottom: 20px;
+    }
+    .details__list{
+		align-self: flex-start;
+		order: 2;
+		flex-basis: 40%;
+	}
+	.details__list__item{
+		font-size: 18px;
+		font-weight: 600;
+	}
+	.pricings{
+		padding-top: 50px;
+		padding-bottom: 60px;
+	}
+	.slick-dots{
+		bottom: -40px;
+	}
+	.pricings__slider__blockquote > p{
+		font-size: 16px;
+		line-height: 24px;
+		margin-bottom: 40px;
+	}
+	.plans__pricings__item .price{
+		font-size: 45px;
+	}
+	.plans__pricings__item  sup{
+		font-size: 25px;
+	}
+	.plans__pricings__item .subtitle__grey{
+		padding-right: 10px;
+		padding-left: 10px;
+		padding-top: 15px;
+		padding-bottom: 20px;
+		text-align: center;
+	}
+	.contact__form{
+		width: 100%;
+	}
+	.page-footer{
+		padding-top: 30px;
+		padding-bottom: 40px;
+	}
 }
-
-/*responsive media*/
-/*1024px - 768px - @media (max-width: 1024px) {*/
-/*768px - 480px - @media (max-width: 768px) */
-/* 480px - 320px - @media (max-width: 480px)*/
