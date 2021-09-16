@@ -393,8 +393,8 @@
 		flex-direction: column;
 		row-gap: 20px;
 	}
-	.butn-container a{
-		width: 100%;
+	.download .button{
+		width: 200px;
 	}
 	.plans__pricings__item {
 	    flex-basis:	65%;
